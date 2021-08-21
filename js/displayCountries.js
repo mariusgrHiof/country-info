@@ -1,5 +1,5 @@
 import fetchAllCountries from "./fetchAllCountries.js";
-
+import formatNumber from "./utils/formatNumberWithCommas.js";
 const displayCountries = async (url) => {
   const countryListEl = document.querySelector(".country-list");
   const countries = await fetchAllCountries(url);
@@ -7,15 +7,17 @@ const displayCountries = async (url) => {
   if (!countries) reutrn;
 
   countryListEl.innerHTML = countries
-    .map((country) => {
+    .map(({ flag, name, population, region, capital, callingCodes }) => {
       return `
-    <article class="country">
-        <div class="img-container"><img src=${country.flag} class="country__flag" alt=""></div>
-        <h3 class="country__name">${country.name}</h3>
-        <p class="country__population">${country.population}</p>
-        <p class="country__region">${country.region}</p>
-        <p class="country__capital">${country.capital}</p>
-    </article>
+     <a href="./countryDetail.html"> 
+      <article class="country" data-id=${callingCodes[0]}>
+          <div class="img-container"><img src=${flag} class="country__flag" alt=""></div>
+          <h3 class="country__name">${name}</h3>
+          <p class="country__population">${formatNumber(population)}</p>
+          <p class="country__region">${region}</p>
+          <p class="country__capital">${capital}</p>
+      </article>
+    </a>
     `;
     })
     .join("");

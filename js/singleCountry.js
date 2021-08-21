@@ -7,7 +7,7 @@ const presentCountry = async () => {
     window.location.replace('index.html');
   } else {
     const country = await fetchCountries(
-      `https://restcountries.eu/rest/v2/callingcode/${id}`
+      `https://restcountries.eu/rest/v2/alpha/${id}`
     );
 
     displaySingleCountry(country);

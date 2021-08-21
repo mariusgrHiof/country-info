@@ -1,4 +1,4 @@
-const countryFlag = document.querySelector('.country-flag');
+const countryFlag = document.querySelector('.country-detail__flag');
 const countryNameTitle = document.querySelector('.country_details-name');
 const countryNativeName = document.querySelector(
   '.country__details-nativename'
@@ -19,6 +19,7 @@ const countryCurrencies = document.querySelector(
 const countryLanguages = document.querySelector('.country__details-languages');
 
 const singleCountry = (country) => {
+  if (!country) return;
   const {
     name,
     nativeName,
@@ -31,7 +32,7 @@ const singleCountry = (country) => {
     topLevelDomain,
     languages,
     population,
-  } = country[0];
+  } = country;
 
   countryFlag.src = flag;
   countryNameTitle.textContent = name;

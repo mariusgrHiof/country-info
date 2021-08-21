@@ -1,14 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
 *,
 *::after,
 ::before {
   box-sizing: border-box;
 }
 
+:root {
+  --dark-blue: hsl(209, 23%, 22%);
+  --very-dark-blue-bg: hsl(207, 26%, 17%);
+  --very-dark-blue-text: hsl(209, 23%, 22%);
+  --dark-grey-text: hsl(0, 0%, 52%);
+  --very-light-grey-bg: hsl(0, 0%, 98%);
+  --white: hsl(209, 23%, 22%);
+
+  /* - Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
+- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
+- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
+- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
+- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
+- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%) */
+}
+
 body {
   margin: 0;
   padding: 0;
   /* Change bg color */
-  background-color: #ddd;
+  background-color: var(--very-light-grey-bg);
+  font-family: "Nunito Sans", sans-serif;
+}
+article {
+  background-color: var(--white);
+}
+
+label {
+  color: var(--very-dark-blue-text);
 }
 
 img {
@@ -24,8 +49,14 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   display: inline-block;
+  color: var(--dark-grey-text);
+  font-weight: 300;
 }
 .navbar {
   display: flex;
@@ -61,21 +92,34 @@ p {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   cursor: pointer;
 }
 
-.country__flag {
-  width: 100%;
-  height: auto;
+.country__name {
+  font-weight: 600;
+  color: var(--very-dark-blue-text);
 }
-.img-container {
-  max-width: 100%;
+
+.country__infos {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+}
+
+.country-detail__img-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.country__flag {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
 }
 .img-container img {
-  max-width: 80%;
+  width: 420px;
+  height: 250px;
 }
 .country-detail {
   display: grid;
@@ -83,7 +127,21 @@ p {
 
   margin: 2em 1em;
 }
+.country-detail__flag {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
 
+.country_details {
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-start;
+  flex-direction: column;
+}
+.country_details-name {
+  margin: 2.5em 0;
+}
 .details-container {
   display: flex;
   justify-content: flex-start;
@@ -94,7 +152,7 @@ p {
   .country-list {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+}*/
 
 @media screen and (max-width: 768px) {
   .country-list {
@@ -102,4 +160,4 @@ p {
     gap: 1em;
     padding: 1.5em;
   }
-} */
+}

@@ -27,6 +27,7 @@
       <div class="hero">
         <form class="d-flex">
           <input
+          id="search"
             class="form-control me-2"
             type="search"
             placeholder="Search"
@@ -36,16 +37,19 @@
         </form>
         <div class="dropdown">
           <select name="dropdown" id="dropdown">
+            <option value="All">All</option>
             <option value="Europe">Europe</option>
             <option value="Africa">Africa</option>
             <option value="Americas">Americas</option>
             <option value="Asia">Asia</option>
             <option value="Oceania">Oceania</option>
+            <option value="Polar">Polar</option>
           </select>
       </div>
     </div>
 
     <main class="country-list"></main>
+    <script type="module" src="./js/searchCountry.js"></script>
     <script type="module" src="./js/filterByRegion.js"></script>
     <script type="module" src="js/app.js"></script>
   </body>

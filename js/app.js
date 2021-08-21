@@ -1,11 +1,7 @@
-import fetchAllCountries from "./fetchAllCountries.js";
 import displayCountries from "./displayCountries.js";
-import setCountry from "./setCountry.js";
-const url = "https://restcountries.eu/rest/v2/all";
-const countriesList = document.querySelector(".country-list");
+// const URL = "https://restcountries.eu/rest/v2/all";
+const regionURL = `https://restcountries.eu/rest/v2/region/`;
 
 window.addEventListener("DOMContentLoaded", () => {
-  displayCountries(url);
+  displayCountries(`${regionURL}europe`);
 });
-
-setCountry(countriesList);

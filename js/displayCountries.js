@@ -1,10 +1,16 @@
 import fetchAllCountries from "./fetchAllCountries.js";
 import formatNumber from "./utils/formatNumberWithCommas.js";
+import setCountry from "./setCountry.js";
+
 const displayCountries = async (url) => {
   const countryListEl = document.querySelector(".country-list");
   const countries = await fetchAllCountries(url);
 
   if (!countries) reutrn;
+
+  if (countryListEl) {
+    setCountry(countryListEl);
+  }
 
   countryListEl.innerHTML = countries
     .map(({ flag, name, population, region, capital, callingCodes }) => {

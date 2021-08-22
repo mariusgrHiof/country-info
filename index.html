@@ -10,6 +10,13 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Rest countries</title>
@@ -23,17 +30,16 @@
           <li class="nav-item"><a class="nav-link" href="#">Dark mode</a></li>
         </ul>
       </nav>
-
       <div class="hero">
         <form class="d-flex">
+          <i class="fas fa-search"></i>
           <input
             id="search"
             class="form-control me-2"
             type="search"
-            placeholder="Search"
+            placeholder="Search for a country..."
             aria-label="Search"
           />
-          <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         <div class="dropdown">
           <select name="dropdown" id="dropdown">
@@ -47,9 +53,9 @@
           </select>
         </div>
       </div>
-
       <main class="country-list"></main>
     </div>
+
     <script type="module" src="./js/searchCountry.js"></script>
     <script type="module" src="./js/filterByRegion.js"></script>
     <script type="module" src="js/app.js"></script>

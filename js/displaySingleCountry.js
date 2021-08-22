@@ -17,16 +17,18 @@ const countryCurrencies = document.querySelector(
   '.country__details-currencies'
 );
 const countryLanguages = document.querySelector('.country__details-languages');
+const detailBorders = document.querySelector('.detail__borders');
 
 const singleCountry = (country) => {
   if (!country) return;
   const {
     name,
+    borders,
+    allBorders,
     nativeName,
     capital,
     region,
     subregion,
-
     flag,
     currencies,
     topLevelDomain,
@@ -34,13 +36,25 @@ const singleCountry = (country) => {
     population,
   } = country;
 
+  // console.log(allBorders);
+
   countryFlag.src = flag;
   countryNameTitle.textContent = name;
   countryNativeName.textContent = nativeName;
   countryCapital.textContent = capital;
-  countryCurrencies.textContent = currencies[0];
+  countryCurrencies.innerHTML = currencies[0].name;
   countryDomain.textContent = topLevelDomain;
-  countryLanguages.textContent = languages[0];
+  countryLanguages.innerHTML = languages
+    .map((language) => {
+      return `<li>${language.name}</li>`;
+    })
+    .join('');
+
+  detailBorders.innerHTML = allBorders
+    .map((country) => {
+      return `<li>${country}</li>`;
+    })
+    .join('');
   countryRegion.textContent = region;
   countrySubregion.textContent = subregion;
   countryPopulation.textContent = population;

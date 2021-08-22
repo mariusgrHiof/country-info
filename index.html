@@ -15,19 +15,19 @@
     <title>Rest countries</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="log">Logo</div>
-      <ul class="nav-list">
-        <li class="nav-item"><a class="nav-link" href="#">Link1</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Link2</a></li>
-      </ul>
-    </nav>
+    <div class="custom-container">
+      <nav class="navbar">
+        <div class="logo">Where in the world?</div>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">Light Mode</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Dark mode</a></li>
+        </ul>
+      </nav>
 
-    <div class="container">
       <div class="hero">
         <form class="d-flex">
           <input
-          id="search"
+            id="search"
             class="form-control me-2"
             type="search"
             placeholder="Search"
@@ -45,10 +45,11 @@
             <option value="Oceania">Oceania</option>
             <option value="Polar">Polar</option>
           </select>
+        </div>
       </div>
-    </div>
 
-    <main class="country-list"></main>
+      <main class="country-list"></main>
+    </div>
     <script type="module" src="./js/searchCountry.js"></script>
     <script type="module" src="./js/filterByRegion.js"></script>
     <script type="module" src="js/app.js"></script>

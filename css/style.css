@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 *,
 *::after,
 ::before {
@@ -26,7 +26,7 @@ body {
   padding: 0;
   /* Change bg color */
   background-color: var(--very-light-grey-bg);
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 article {
   background-color: var(--white);
@@ -34,13 +34,10 @@ article {
 
 label {
   color: var(--very-dark-blue-text);
+  font-weight: 600;
 }
 
 img {
-  max-width: 100%;
-}
-
-.img-container {
   max-width: 100%;
 }
 
@@ -58,11 +55,25 @@ p {
   color: var(--dark-grey-text);
   font-weight: 300;
 }
+
+h3 {
+  font-size: 1.3rem;
+}
+
+.logo {
+  font-weight: 600;
+}
+.custom-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em 1.5em;
+  margin: 0 2.5em;
+  font-weight: 600;
 }
 
 .nav-list {
@@ -79,13 +90,19 @@ p {
 .hero {
   display: flex;
   justify-content: space-between;
-  margin: 2em 0.5em;
+  align-items: center;
+  margin: 0 2.5em;
 }
 
 .country-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+
+  margin: 2.5em 0;
+}
+.country-list a {
+  width: 75%;
 }
 
 .country {
@@ -104,7 +121,11 @@ p {
 .country__infos {
   display: flex;
   flex-direction: column;
-  padding: 1.5em;
+  padding: 1em;
+}
+
+.country__info {
+  margin-bottom: -0.5em;
 }
 
 .country-detail__img-container {
@@ -112,15 +133,17 @@ p {
   justify-content: center;
   align-items: center;
 }
-.country__flag {
-  width: 70%;
-  height: 70%;
+/* .country__flag {
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 .img-container img {
-  width: 420px;
-  height: 250px;
-}
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+} */
+
 .country-detail {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -135,7 +158,7 @@ p {
 
 .country_details {
   display: flex;
-  /* justify-content: center; */
+
   align-items: flex-start;
   flex-direction: column;
 }
@@ -148,11 +171,17 @@ p {
   gap: 5em;
 }
 
-/* @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1224px) {
+  .country-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .country-list {
     grid-template-columns: repeat(2, 1fr);
   }
-}*/
+}
 
 @media screen and (max-width: 768px) {
   .country-list {

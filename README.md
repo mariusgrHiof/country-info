@@ -33,10 +33,12 @@ Users should be able to:
 ![Details Desktop](./screenshots/screenshot-details-desktop.jpeg)
 
 <img src="./screenshots/screenshot-details-mobile.jpeg" width="500" height="1200">
-![Details Mobile](./screenshots/screenshot-details-mobile.jpeg = 250x250)
+
 
 ![Main Desktop](./screenshots/screenshot-main-desktop.png)
-![Main Mobil](./screenshots/screenshot-main-mobile.jpeg)
+
+<img src="./screenshots/screenshot-main-mobile.jpeg" width="500" height="1200">
+
 
 ### Links
 

@@ -1,4 +1,5 @@
 import setBorder from './setBorder.js';
+import formatNumber from './utils/formatNumberWithCommas.js';
 
 const countryFlag = document.querySelector('.country-detail__flag');
 const countryNameTitle = document.querySelector('.country_details-name');
@@ -56,12 +57,12 @@ const singleCountry = (country) => {
 
   detailBorders.innerHTML = allBorders
     .map(({ alpha3Code, name }) => {
-      return `<a class="border" href="./countryDetail.html"><li data-id=${alpha3Code}>${name}</li></a>`;
+      return `<a class="border" data-id=${alpha3Code} href="./countryDetail.html">${name}</a>`;
     })
     .join('');
   countryRegion.textContent = region;
   countrySubregion.textContent = subregion;
-  countryPopulation.textContent = population;
+  countryPopulation.textContent = formatNumber(population);
 };
 
 export default singleCountry;

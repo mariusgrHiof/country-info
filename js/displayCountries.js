@@ -19,13 +19,9 @@ const displayCountries = async (url) => {
   countryListEl.innerHTML = countries
     .map(({ flag, name, population, region, capital, alpha3Code }) => {
       return `
-      
-       
-        <a href="./countryDetail.html"> 
+      <a href="./countryDetail.html"> 
           <article class="country" data-id=${alpha3Code}>
-              <div class="img-container">
-                <img src=${flag} class="country__flag" alt="">
-              </div>
+              <img src=${flag} class="country__flag" alt="">
               <div class="country__infos">
                 <h3 class="country__name">${name}</h3>
                 <div class="country__info">
@@ -43,11 +39,7 @@ const displayCountries = async (url) => {
               </div>  
           </article>
         </a>
-     
-      
-     
-     
-    `;
+     `;
     })
     .join('');
 };

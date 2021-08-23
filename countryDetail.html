@@ -22,29 +22,25 @@
   </head>
 
   <body>
-    <div class="custom-container">
-      <nav class="navbar">
+    <nav class="nav-bar">
+      <div class="custom-container flex">
         <div class="logo">Where in the world?</div>
-        <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="#">Light Mode</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Dark mode</a></li>
-        </ul>
-      </nav>
+      </div>
+    </nav>
+    <div class="custom-container">
       <main class="country-detail">
-        <div class="backbtn-container">
-          <i class="fas fa-long-arrow-alt-left"></i>
-          <a class="backbtn" href="./index.html" class="btn btn-primary">
-            Back</a
-          >
-        </div>
+        <a class="backbtn" href="./index.html" class="btn btn-primary"
+          ><i class="fas fa-long-arrow-alt-left"></i> Back</a
+        >
+
         <div class="country_details">
           <div class="country-detail__img-container">
             <img class="country-detail__flag" src="" alt="flag" />
           </div>
 
           <div class="details-container">
+            <h3 class="country_details-name"></h3>
             <div class="country-details__info">
-              <h3 class="country_details-name"></h3>
               <ul class="country-details-left">
                 <li>
                   <label for="nativename">Native name:</label>
@@ -83,7 +79,7 @@
               </ul>
             </div>
             <div class="detail__border">
-              <label for="detail__borders">Borders:</label>
+              <label for="detail__borders">Border countries:</label>
               <ul class="detail__borders"></ul>
             </div>
           </div>

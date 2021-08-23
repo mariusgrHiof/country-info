@@ -1,5 +1,4 @@
 import displayCountries from './displayCountries.js';
-
 const form = document.querySelector('.d-flex');
 const URL = 'https://restcountries.eu/rest/v2/name/';
 

@@ -5,7 +5,7 @@ const getBorders = async (bordersArr) => {
   // Array of Promises
   let requests = bordersArr.map((country) => fetch(`${borderURL}${country}`));
 
-  // array of responses
+  // Array of responses
   const responses = await Promise.all(requests);
 
   for (let i = 0; i < responses.length; i++) {

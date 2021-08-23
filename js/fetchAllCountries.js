@@ -11,7 +11,6 @@ const fetchAllCountries = async (url) => {
       data.allBorders = newBorders;
     }
 
-    // console.log(data);
     return data;
   } catch (error) {
     console.log(error);

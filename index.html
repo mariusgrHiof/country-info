@@ -22,14 +22,12 @@
     <title>Rest countries</title>
   </head>
   <body>
-    <div class="custom-container">
-      <nav class="navbar">
+    <nav class="nav-bar">
+      <div class="custom-container flex">
         <div class="logo">Where in the world?</div>
-        <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="#">Light Mode</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Dark mode</a></li>
-        </ul>
-      </nav>
+      </div>
+    </nav>
+    <div class="custom-container">
       <div class="hero">
         <form class="d-flex">
           <i class="fas fa-search"></i>
@@ -43,11 +41,11 @@
         </form>
         <div class="dropdown">
           <select name="dropdown" id="dropdown">
-            <option value="All">All</option>
-            <option value="Europe">Europe</option>
+            <option value="All">Filter by region</option>
             <option value="Africa">Africa</option>
-            <option value="Americas">Americas</option>
+            <option value="Americas">America</option>
             <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
             <option value="Oceania">Oceania</option>
             <option value="Polar">Polar</option>
           </select>

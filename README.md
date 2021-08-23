@@ -37,7 +37,7 @@ Users should be able to:
 
 ![Main Desktop](./screenshots/screenshot-main-desktop.png)
 
-<img src="./screenshots/screenshot-main-mobile.jpeg" width="700" height="1200" style="object-fit: cover;">
+<img src="./screenshots/screenshot-main-mobile.jpeg" width="300" height="500">
 
 
 ### Links

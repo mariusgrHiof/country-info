@@ -32,7 +32,7 @@ Users should be able to:
 
 ![Details Desktop](./screenshots/screenshot-details-desktop.jpeg)
 
-<img src="./screenshots/screenshot-details-mobile.jpeg" width="300" height="500">
+<img src="./screenshots/screenshot-details-mobile.jpeg" width="500" height="700">
 ![Details Mobile](./screenshots/screenshot-details-mobile.jpeg = 250x250)
 
 ![Main Desktop](./screenshots/screenshot-main-desktop.png)

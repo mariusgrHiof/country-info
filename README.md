@@ -33,7 +33,7 @@ Users should be able to:
 ![Details Desktop](./screenshots/screenshot-details-desktop.jpeg)
 ![Details Mobile](./screenshots/screenshot-details-mobile.jpeg)
 
-![Main Desktop](./screenshots/screenshot-main-desktop.jpeg)
+![Main Desktop](./screenshots/screenshot-main-desktop.png)
 ![Main Mobil](./screenshots/screenshot-main-mobile.jpeg)
 
 ### Links

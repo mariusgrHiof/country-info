@@ -31,6 +31,8 @@ Users should be able to:
 ### Screenshot
 
 ![Details Desktop](./screenshots/screenshot-details-desktop.jpeg)
+
+<img src="./screenshots/screenshot-details-mobile.jpeg" width="100" height="100">
 ![Details Mobile](./screenshots/screenshot-details-mobile.jpeg = 250x250)
 
 ![Main Desktop](./screenshots/screenshot-main-desktop.png)

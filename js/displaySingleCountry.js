@@ -1,3 +1,5 @@
+import setBorder from './setBorder.js';
+
 const countryFlag = document.querySelector('.country-detail__flag');
 const countryNameTitle = document.querySelector('.country_details-name');
 const countryNativeName = document.querySelector(
@@ -36,7 +38,9 @@ const singleCountry = (country) => {
     population,
   } = country;
 
-  // console.log(allBorders);
+  if (detailBorders) {
+    setBorder(detailBorders);
+  }
 
   countryFlag.src = flag;
   countryNameTitle.textContent = name;
@@ -51,8 +55,8 @@ const singleCountry = (country) => {
     .join('');
 
   detailBorders.innerHTML = allBorders
-    .map((country) => {
-      return `<li>${country}</li>`;
+    .map(({ alpha3Code, name }) => {
+      return `<a class="border" href="./countryDetail.html"><li data-id=${alpha3Code}>${name}</li></a>`;
     })
     .join('');
   countryRegion.textContent = region;

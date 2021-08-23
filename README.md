@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Details Desktop](./screenshots/screenshot-details-desktop.png)
+![Details Desktop](./screenshots/screenshot-details-desktop)
 ![Details Mobile](./screenshots/screenshot-details-mobile.png)
 
 ![Main Desktop](./screenshots/screenshot-main-desktop.png)
